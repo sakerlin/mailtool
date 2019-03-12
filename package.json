@@ -1,0 +1,29 @@
+{
+  "name": "mailtool",
+  "version": "1.0.0",
+  "description": "inline css and mail html content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakerlin/mailtool.git"
+  },
+  "keywords": [
+    "mail"
+  ],
+  "author": "saker.lin@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakerlin/mailtool/issues"
+  },
+  "bin": {
+    "inline-css": "./src/inline-css.js"
+  },
+  "homepage": "https://github.com/sakerlin/mailtool#readme",
+  "devDependencies": {
+    "juice": "^5.1.0",
+    "nodemailer": "^5.1.1"
+  }
+}
