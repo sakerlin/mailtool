@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sakerlin/mailtool#readme",
   "devDependencies": {
-    "juice": "^5.1.0",
+    "juice": "^5.2.0",
     "nodemailer": "^5.1.1"
   }
 }
