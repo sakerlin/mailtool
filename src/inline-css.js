@@ -10,25 +10,13 @@ const moment = require('moment')
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'saker.lin@gmail.com',
-        pass: 'lzrjthtzaozdiwcc'  // google app password
+        user: '',
+        pass: ''  // google app password
     }
 })
 
-const uedAndPm = [
-  'cha0729@verizonmedia.com',
-  'sophiak@verizonmedia.com',
-  'tzuchiw@verizonmedia.com',
-  'anadem@verizonmedia.com'
-]
-const mailList = [
-  'saker.lin@gmail.com',
-  'saker.lin@yahoo.com.hk',
-  'saker.lin@aol.com',
-  'saker.lin@icloud.com',
-  'saker.lin@outlook.com',
-  'saker.lin@zoho.com'
-]
+const uedAndPm = []
+const mailList = []
 const sourceFile = process.argv[2]
 const sendMail = (process.argv.indexOf('--sendMail') !== -1)
 
@@ -45,7 +33,7 @@ if (fs.existsSync(sourceFile)) {
       i++
       setTimeout(() => {
         const options = {
-            from: 'kelyn.guo@gmail.com', //寄件者
+            from: '', //寄件者
             to: targetMail, //收件者
             cc: '', //副本
             bcc: '', //密件副本
